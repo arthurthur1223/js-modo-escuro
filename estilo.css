@@ -1,12 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 40px;
 }
 
 h1 {
-    color: #333333;
+    font-size: 32px;
 }
 
 p {
@@ -16,5 +17,6 @@ p {
 button {
     padding: 10px 20px;
     font-size: 18px;
+    margin: 5px;
     cursor: pointer;
 }
