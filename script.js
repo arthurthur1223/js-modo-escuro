@@ -1,7 +1,21 @@
+let contador = 0;
 
-function mostrarNome() {
-    let nome = document.getElementById("nome").value;
-
-    document.getElementById("mensagem").innerText =
-        "Bem-vindo, " + nome + "!";
+function atualizarContador() {
+    document.getElementById("contador").innerText = contador;
 }
+
+function aumentar() {
+    contador++;
+    atualizarContador();
+}
+
+function diminuir() {
+    contador--;
+    atualizarContador();
+}
+
+function zerar() {
+    contador = 0;
+    atualizarContador();
+}
+atualizarContador();
