@@ -1,4 +1,3 @@
-
 function mostrarNome() {
     let nome = document.getElementById("nome").value;
 
