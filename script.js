@@ -1,4 +1,6 @@
-function alterarTexto() {
-    document.getElementById("mensagem").innerText = 
-        "O texto foi alterado usando JavaScript!";
+function mostrarNome() {
+    let nome = document.getElementById("nome").value;
+
+    document.getElementById("mensagem").innerText =
+        "Bem-vindo, " + nome + "!";
 }
