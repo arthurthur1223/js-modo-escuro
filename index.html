@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 01</title>
+    <title>Exercício 10 — Login Simples</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <main class="container">
+        <h1>Login Simples</h1>
+        <p>Digite o usuário e a senha para testar a validação.</p>
 
-    <h1>Alterando Conteúdo com JavaScript</h1>
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" placeholder="Digite o usuário">
 
-    <p id="mensagem">Clique no botão para alterar este texto.</p>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite a senha">
 
-    <button onclick="alterarTexto()">Alterar texto</button>
+        <div class="botoes">
+            <button onclick="verificarLogin()">Entrar</button>
+            <button class="secundario" onclick="limparCampos()">Limpar</button>
+        </div>
+
+        <p id="resultado">Resultado: </p>
+        <p class="dica">Teste com o usuário <strong>aluno</strong> e a senha <strong>1234</strong>.</p>
+    </main>
 
     <script src="script.js"></script>
 </body>
