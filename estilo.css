@@ -1,20 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 40px;
+    background-color: #be1975;
+    color: #2d3748;
+    margin: 0;
+    padding: 14px 14px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 14px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(58, 84, 98, 0.15);
 }
 
 h1 {
-    color: #333333;
+    margin-top: 0;
+    color: #111ae6;
+    text-align: center;
 }
 
-p {
-    font-size: 20px;
+.container > p {
+    text-align: center;
+    color: #4a5568;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 11px;
+    margin-top: 7px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: 2px solid rgba(37, 99, 235, 0.2);
+}
+
+.opcao {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.opcao input {
+    margin-top: 3px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 18px;
+    flex: 1;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1114e6;
+    color: white;
+    font-size: 14px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d10d2;
+}
+
+button.secundario {
+    background-color: #475569;
+}
+
+button.secundario:hover {
+    background-color: #334155;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 14px;
+    border-left: 4px solid #3b82f6;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+.resultado h2 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.resultado p {
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+#mensagem {
+    color: #52606d;
+}
+
+@media (max-width: 520px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
 }
